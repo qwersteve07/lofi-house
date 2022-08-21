@@ -209,6 +209,7 @@ a{
     position: relative;
     color: white;
     height: 510px;
+    overflow: hidden;
 }
 
 .intro-banner .slogan{
@@ -238,7 +239,8 @@ a{
 .scene-banner{
     position: relative;
     color: white;
-    height: 510px
+    height: 510px;
+    overflow: hidden;
 }
 
 .scene-banner .button{
@@ -744,7 +746,7 @@ a{
     left: 0;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100% !important;
    object-fit: cover;
 }
 
@@ -1133,7 +1135,7 @@ a{
 
 .question-section .list li img{
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -1314,7 +1316,7 @@ a{
 
 .contain-section{
     height: 600px;
-    background-image: url('./contain.jpg');
+    background-image: url('https://wordpress.lofi-house.com/wp-content/uploads/2022/08/contain.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1371,7 +1373,7 @@ a{
 
 .pick-section img{
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -1477,7 +1479,7 @@ a{
 
 .more-products-section li .image img{
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     object-fit: cover;
 }
 
