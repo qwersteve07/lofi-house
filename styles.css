@@ -1,5 +1,3 @@
-
-
 body{
     padding: 0;
     margin: 0;
@@ -45,7 +43,7 @@ a{
 
 .button{
     position: relative;
-    font-family: avant;
+    font-family: avant !important;
     font-size: 14px;
     padding: 0 40px 0 20px;
     height: 44px;
@@ -310,7 +308,7 @@ a{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    font-family: "Noto-Sung";
+    font-family: "Noto-Sung" !important;
 }
 
 .scene-banner .title span{
@@ -452,7 +450,7 @@ a{
     margin: 0 40px;
     font-weight: 400;
     font-size: 22px;
-    font-family: "Noto-Sung";
+    font-family: "Noto-Sung" !important;
 }
 
 .past-section ul{
@@ -551,7 +549,7 @@ a{
     font-size: 22px;
     color: #3C3C3C;
     letter-spacing: 2px;
-    font-family: "Noto-Sung";
+    font-family: "Noto-Sung" !important;
 }
 
 .now-section .block{
@@ -569,7 +567,7 @@ a{
     font-size: 28px;
     position: absolute;
     letter-spacing: 6px;
-    font-family: "Noto-Sung";
+    font-family: "Noto-Sung" !important;
 }
 
 .now-section .block p{
@@ -704,7 +702,7 @@ a{
 
 
 .series-section .grid-content{
-    font-family: "Noto-Sung";
+    font-family: "Noto-Sung" !important;
     gap: 10px;
     display: none;
     grid-template-columns: 1fr 1fr 1fr 1fr;
