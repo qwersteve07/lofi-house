@@ -1329,6 +1329,10 @@ a{
 }
 
 @media (max-width: 767px){
+    .work-section{
+        overflow: hidden
+    }
+    
     .work-section .work-list.desktop{
         display: none;
     }
