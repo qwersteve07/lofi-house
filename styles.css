@@ -325,7 +325,7 @@ a{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    font-family: "Noto serif" !important;
+    font-family: "Noto serif TC" !important;
 }
 
 .scene-banner .title span{
@@ -471,7 +471,7 @@ a{
     margin: 0 40px;
     font-weight: 400;
     font-size: 22px;
-    font-family: "Noto serif" !important;
+    font-family: "Noto serif TC" !important;
 }
 
 .past-section ul{
@@ -571,7 +571,7 @@ a{
     font-size: 22px;
     color: #3C3C3C;
     letter-spacing: 2px;
-    font-family: "Noto serif" !important;
+    font-family: "Noto serif TC" !important;
 }
 
 .now-section .block{
@@ -591,7 +591,7 @@ a{
     font-size: 28px;
     position: absolute;
     letter-spacing: 6px;
-    font-family: "Noto serif" !important;
+    font-family: "Noto serif TC" !important;
 }
 
 .now-section .block p{
@@ -614,8 +614,7 @@ a{
 }
 
 .now-section .block:nth-of-type(1) .title{
-    top: 26%;
-    left: 160px;
+    top: 5% !important;
 }
 
 .now-section .block:nth-of-type(1) .title span{
@@ -791,7 +790,7 @@ a{
 }
 
 .series-section .grid-content{
-    font-family: "Noto serif" !important;
+    font-family: "Noto serif TC" !important;
     gap: 10px;
     display: none;
     height: 100%;
