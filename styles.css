@@ -1,3 +1,26 @@
+@font-face {
+    font-family: "Noto-Sung";
+    font-style: normal;
+    font-weight: normal;
+    src:  url('https://raw.githubusercontent.com/qwersteve07/lofi-house/main/NotoSerifCJKtc-Regular.woff') format(woff)
+}
+
+@font-face {
+    font-family: "Noto-Sans";
+    font-style: normal;
+    font-weight: normal;
+    src:  url('https://raw.githubusercontent.com/qwersteve07/lofi-house/main/SourceHanSansTWHK-Regular.woff') format(woff)
+}
+
+@font-face {
+    font-family: Avant;
+    font-style: normal;
+    font-weight: normal;
+    src: 
+    url('https://raw.githubusercontent.com/qwersteve07/lofi-house/main/ITC Avant Garde Gothic Book.woff') format(woff),
+    url('https://raw.githubusercontent.com/qwersteve07/lofi-house/main/ITC Avant Garde Gothic Book.ttf') format(truetype);
+}
+
 #page_container{
     padding: 0
 }
