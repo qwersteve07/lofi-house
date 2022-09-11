@@ -189,6 +189,20 @@ a{
     content: none
 }
 
+.swiper-slide img.mobile{
+    display: none
+}
+
+@media (max-width: 767px){
+    .swiper-slide img{
+        display: none
+    }
+
+    .swiper-slide img.mobile{
+        display: inherit
+    }
+}
+
 /*  intro-banner */
 
 .intro-banner{
@@ -208,7 +222,6 @@ a{
     letter-spacing: 3px;
     z-index: 10
 }
-
 
 @media (max-width: 767px){
     .intro-banner{
@@ -585,6 +598,11 @@ a{
     font-size: 17px;
     position: absolute;
     letter-spacing: 6px;
+    box-sizing: border-box;
+}
+
+.now-section .block img.mobile{
+    display: none;
 }
 
 .now-section .block:before{
@@ -676,22 +694,37 @@ a{
     .now-section .slogan{
         margin: 0 30px;
     }
-    
-    .now-section .block .title{
-        font-size: 20px;
+
+    .now-section .block{
+        height: calc(100vh - 70px);
     }
     
+    .now-section .block img{
+        display: none;
+    }
+
+    .now-section .block img.mobile{
+        display: inherit;
+    }
+
+    .now-section .block .title{
+        font-size: 20px;
+        top: 10% !important;
+        width: 100% !important;
+        left: 0 !important;
+        right: auto !important;
+        text-align: center !important;
+    }
+
     .now-section .block p{
         font-size: 14px;
         letter-spacing: 4px;
-        text-align: center;
-    }
-    
-    .now-section .block:nth-of-type(1) .title,.now-section .block:nth-of-type(2) .title,.now-section .block:nth-of-type(3) .title{
-        width: 100%;
-        left: 0;
-        top: 16%;
-        text-align: center;
+        width: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        top: 25% !important;
+        padding: 0 20px !important;
+        text-align: center !important;
     }
     
     .now-section .block:nth-of-type(1) .title span{
@@ -702,21 +735,10 @@ a{
         margin: 0;
     }
     
-    .now-section .block:nth-of-type(1) p,.now-section .block:nth-of-type(2) p,.now-section .block:nth-of-type(3) p{
-        width: 100%;
-        left: 0;
-        top: 46%;
-        padding: 0 20px;
-    }
-    
     .now-section .block:nth-of-type(3){
-        background: url('https://wordpress.lofi-house.com/wp-content/uploads/2022/08/now-3.jpg') no-repeat 0 0/cover
+        background: url('https://wordpress.lofi-house.com/wp-content/uploads/2022/09/m-now-3-scaled.jpg') no-repeat 0 0/cover
     }
     
-}
-
-.series-section{
-    padding-top: 70px;
 }
 
 .series-section .tabs{
@@ -911,8 +933,9 @@ a{
 }
 
 @media (max-width: 767px) {
+
     .series-section .grid-container{
-        height: 100%;
+        height: calc(100vh - 130px);
         max-height: 700px;
     }
     
@@ -1139,6 +1162,10 @@ a{
     list-style-type: none;
 }
 
+.question-section .questions li br{
+    display: none;
+}
+
 .question-section .questions li:nth-of-type(1){
     top: 15%;
     left: 20%;
@@ -1217,6 +1244,10 @@ a{
 
     .question-section .questions li{
         white-space: nowrap;
+    }
+
+    .question-section .questions li br{
+        display: inherit;
     }
 
     .question-section .questions li:nth-of-type(1) {
@@ -1405,8 +1436,14 @@ a{
 
 @media (max-width: 767px){
     .contain-section{
-        height: 400px;
+        background-image: url('https://wordpress.lofi-house.com/wp-content/uploads/2022/09/m-contain-1-scaled.jpg')
     }
+
+
+    .contain-section .content{
+        padding: 60px 40px 0;
+    }
+
 }
 
 
@@ -1446,6 +1483,7 @@ a{
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 
@@ -1486,12 +1524,14 @@ a{
     font-size: 22px;
     margin-bottom: 18px;
     letter-spacing: 2px;
+    z-index: 1;
 }
 
 .pick-section .desc{
     display: block;
     position: relative;
     font-size: 14px;
+    z-index: 1;
 }
 
 @media (max-width: 767px) {
