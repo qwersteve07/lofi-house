@@ -1,3 +1,7 @@
+#ckeditor *{
+    font-family: "ITC Avant Garde Gothic",Noto-Sans,PingFang TC,helvetica !important
+}
+
 #page_container{
     padding: 0
 }
@@ -475,7 +479,7 @@ a{
 }
 
 .past-section ul{
-    margin: 50px 0;
+    margin: 50px 0 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -642,8 +646,8 @@ a{
 }
 
 .now-section .block:nth-of-type(2) p{
-    top: 52%;
-    right: 160px;
+    top: 58%;
+    right: 115px;
     text-align: right;
 }
 
@@ -657,7 +661,7 @@ a{
 }
 
 .now-section .block:nth-of-type(3) p{
-    top: 45%;
+    top: 50%;
     left: 160px;
 }
 
@@ -1237,6 +1241,7 @@ a{
 .question-section .list li .title{
     position: relative;
     font-size: 22px;
+    letter-spacing: 2px;
 }
 
 .question-section .list li .desc{
