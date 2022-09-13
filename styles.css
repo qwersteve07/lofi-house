@@ -614,7 +614,8 @@ a{
 }
 
 .now-section .block:nth-of-type(1) .title{
-    top: 5% !important;
+    top: 20%;
+    left: 10%;
 }
 
 .now-section .block:nth-of-type(1) .title span{
@@ -740,6 +741,10 @@ a{
     
 }
 
+.series-section{
+    padding-top: 40px;
+}
+
 .series-section .tabs{
     margin: 0 0 40px;  
     padding: 0;
@@ -852,7 +857,7 @@ a{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    z-index: 1;
+    z-index: 0;
     position: absolute;
     bottom: 25px;
     right: 30px;
@@ -954,6 +959,10 @@ a{
         left: 14px;
         bottom: 14px;
         width: 65%;
+    }
+
+    .series-section .grid1 .text .desc{
+        margin-bottom: 0;
     }
 
     .series-section .grid6 .note span:first-of-type{
@@ -1254,7 +1263,7 @@ a{
     }
 
     .question-section .questions li:nth-of-type(2) {
-        top: 26%;
+        top: 22%;
         left: 6%;
     }
 
