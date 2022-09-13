@@ -5,7 +5,7 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: "JasonHandWriting1","ITC Avant Garde Gothic",Noto-Sans,PingFang TC,helvetica
+    font-family: "ITC Avant Garde Gothic",Noto-Sans,PingFang TC,helvetica !important
 }
 
 
@@ -325,7 +325,7 @@ a{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    font-family: "Noto serif TC" !important;
+    font-family: "Noto serif CJK TC" !important;
 }
 
 .scene-banner .title span{
@@ -471,7 +471,7 @@ a{
     margin: 0 40px;
     font-weight: 400;
     font-size: 22px;
-    font-family: "Noto serif TC" !important;
+    font-family: "Noto serif CJK TC" !important;
 }
 
 .past-section ul{
@@ -571,7 +571,7 @@ a{
     font-size: 22px;
     color: #3C3C3C;
     letter-spacing: 2px;
-    font-family: "Noto serif TC" !important;
+    font-family: "Noto serif CJK TC" !important;
 }
 
 .now-section .block{
@@ -591,7 +591,7 @@ a{
     font-size: 28px;
     position: absolute;
     letter-spacing: 6px;
-    font-family: "Noto serif TC" !important;
+    font-family: "Noto serif CJK TC" !important;
 }
 
 .now-section .block p{
@@ -790,7 +790,7 @@ a{
 }
 
 .series-section .grid-content{
-    font-family: "Noto serif TC" !important;
+    font-family: "Noto serif CJK TC" !important;
     gap: 10px;
     display: none;
     height: 100%;
