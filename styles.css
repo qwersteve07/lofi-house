@@ -28,6 +28,7 @@ a{
     text-align: center;
     color: #3C3C3C;
     position: relative;
+    z-index: 1;
 }
 
 .heading h3{
@@ -640,13 +641,13 @@ a{
 
 .now-section .block:nth-of-type(2) .title{
     top: 35%;
-    right: 160px;
+    right: 115px;
     text-align: right;
 }
 
 .now-section .block:nth-of-type(2) p{
     top: 58%;
-    right: 160px;
+    right: 115px;
     text-align: right;
 }
 
@@ -656,12 +657,12 @@ a{
 
 .now-section .block:nth-of-type(3) .title{
     top: 35%;
-    left: 160px;
+    left: 115px;
 }
 
 .now-section .block:nth-of-type(3) p{
     top: 50%;
-    left: 160px;
+    left: 115px;
 }
 
 .now-section .block:nth-of-type(3){
@@ -942,6 +943,13 @@ a{
     grid-area: grid6
 }
 
+@media (max-width: 991px) {
+    .series-section .tabs li{
+        font-size: 13px;
+    }   
+}
+
+
 @media (max-width: 767px) {
 
     .series-section .grid-container{
@@ -998,6 +1006,7 @@ a{
 
     .series-section .tabs li{
         white-space: nowrap;
+        font-size: 17px
     }
 
     
@@ -1252,6 +1261,21 @@ a{
     font-size: 14px;
 }
 
+@media (max-width: 991px) {
+    .question-section .list li{
+        height: 300px;
+        padding: 0 10px;
+    }
+
+    .question-section .list li .title{
+        font-size: 15px
+    }
+
+    .question-section .questions li:nth-of-type(5) {
+        left: 45%;
+    }
+}
+
 @media (max-width: 767px){
     .question-section .questions{
         height: 450px;
@@ -1295,8 +1319,10 @@ a{
 
     .question-section .list li{
         width: 100%;
-        height: 300px;
+    }
 
+    .question-section .list li .title{
+        font-size: 22px
     }
 }
 
@@ -1642,7 +1668,8 @@ a{
 /* address */
 
 .address-section{
-    height: 57vw;
+    height: 53vw;
+    max-height: 650px;
     color: white;
     position: relative;
 }
@@ -1688,6 +1715,13 @@ a{
     margin: 0 auto;
 }
 
+@media (max-width: 991px){
+    .address-section{
+        height: 41vw;
+    }
+}
+
+
 @media (max-width: 767px){
     .address-section{
         height: 380px;
@@ -1709,7 +1743,8 @@ a{
 
 
 .future-section{
-    height: 57vw;
+    height: 53vw;
+    max-height: 650px;
     color: #3c3c3c;
     position: relative;
 }
@@ -1743,6 +1778,11 @@ a{
     left: 15%;
 }
 
+@media (max-width: 991px){
+    .future-section{
+        height: 41vw;
+    }
+}
 
 @media (max-width: 767px){
     .future-section{
