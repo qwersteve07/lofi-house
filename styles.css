@@ -1715,6 +1715,12 @@ a{
     margin: 0 auto;
 }
 
+@media (max-width: 1200px){
+    .address-section{
+        height: 49vw;
+    }
+}
+
 @media (max-width: 991px){
     .address-section{
         height: 41vw;
@@ -1776,6 +1782,12 @@ a{
     z-index: 1;
     top: 38%;
     left: 15%;
+}
+
+@media (max-width: 1200px){
+    .future-section{
+        height: 49vw;
+    }
 }
 
 @media (max-width: 991px){
