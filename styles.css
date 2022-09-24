@@ -332,7 +332,6 @@ a{
 .scene-banner .title span{
     font-size: 12px;
     margin-left: 6px;
-    font-style: italic;
     letter-spacing: 1px;
     margin-bottom: 4px;
 }
@@ -374,6 +373,7 @@ a{
     .scene-banner .title{
         flex-direction: column-reverse;
         align-items: flex-start;
+        font-size: 22px;
     }
 
     .scene-banner .title span{
@@ -590,6 +590,7 @@ a{
 
 .now-section .block .title{
     font-size: 28px;
+    font-weight: 500;
     position: absolute;
     letter-spacing: 6px;
     font-family: "Noto serif CJK TC" !important;
@@ -614,7 +615,6 @@ a{
     width: 100%;
     height: 100%;
 }
-
 
 
 .now-section .block:nth-of-type(1) .title{
@@ -701,22 +701,29 @@ a{
 
     .now-section .block{
         height: calc(100vh - 70px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
+
     .now-section .block img{
         display: none;
     }
 
     .now-section .block img.mobile{
         display: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
+
     .now-section .block .content{
-        position: absolute;
-        top: 10%;
+        position: relative;
+        z-index: 2;
         width: 100% ;
-        left: 0 ;
         text-align: center;
+        position: relative;
     }
 
     .now-section .block .title{
@@ -736,6 +743,11 @@ a{
 
     .now-section .block:nth-of-type(1) .title span{
         font-size: 40px;
+    }
+
+    .now-section .block:before{
+        z-index: 1;
+        background: rgba(255,255,255,0.15) !important
     }
     
     .now-section .block:nth-of-type(1) .title>div:last-of-type{
@@ -803,6 +815,7 @@ a{
 
 .series-section .grid-content{
     font-family: "Noto serif CJK TC" !important;
+    font-weight: 500;
     gap: 10px;
     display: none;
     height: 100%;
@@ -838,6 +851,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .series-section .grid1 .text{
@@ -851,7 +865,7 @@ a{
 }
 
 .series-section .grid1 .text .title{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .series-section .grid1 .text .desc{
@@ -953,8 +967,8 @@ a{
 @media (max-width: 767px) {
 
     .series-section .grid-container{
-        height: calc(100vh - 130px);
-        max-height: 700px;
+        height: 950px;
+        max-height: inherit;
     }
     
     .series-section .grid-content{
@@ -1228,7 +1242,8 @@ a{
 .question-section .list li{
     overflow: hidden;
     width: calc((100% - 20px) / 3);
-    height: 400px;
+    height: calc((100vw - 20px) / 3);
+    max-height: 400px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -1263,7 +1278,7 @@ a{
 
 @media (max-width: 991px) {
     .question-section .list li{
-        height: 300px;
+        height: calc((100vw - 60px) / 3);
         padding: 0 10px;
     }
 
@@ -1318,7 +1333,9 @@ a{
     }
 
     .question-section .list li{
+        height: calc(100vw - 40px);
         width: 100%;
+        max-height: initial;
     }
 
     .question-section .list li .title{
@@ -1451,8 +1468,20 @@ a{
     height: 50vw;
     max-height: 600px;
     background-image: url('https://wordpress.lofi-house.com/wp-content/uploads/2022/09/contain-scaled.jpg');
+    background-position: bottom right;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.contain-section:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,#FFFFFF 20%,transparent 60%);
+    pointer-events: none;
 }
 
 .contain-section .title{
@@ -1478,14 +1507,21 @@ a{
 
 @media (max-width: 767px){
     .contain-section{
-        height: calc(100vh - 70px);
+        margin-top: 50px;
+        height: 720px;
         max-height: initial;
-        background-image: url('https://wordpress.lofi-house.com/wp-content/uploads/2022/09/m-contain-1-scaled.jpg')
+        background-image: url('https://wordpress.lofi-house.com/wp-content/uploads/2022/09/m-contain-2.jpg');
+        background-position: bottom;
+    }
+
+    .contain-section:before{
+        background-image: linear-gradient(to bottom,#FFFFFF 0%,transparent 25%);
     }
 
 
     .contain-section .content{
-        padding: 60px 40px 0;
+        width: 70%;
+        top: 0;
     }
 
 }
@@ -1790,7 +1826,7 @@ a{
     }
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px){  
     .future-section{
         height: 41vw;
     }
