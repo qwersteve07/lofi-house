@@ -590,7 +590,7 @@ a{
 
 .now-section .block .title{
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
     position: absolute;
     letter-spacing: 6px;
     font-family: "Noto serif CJK TC" !important;
@@ -1766,7 +1766,7 @@ a{
 
 @media (max-width: 767px){
     .address-section{
-        height: 380px;
+        height: 480px;
     }
 
     .address-section .background img{
