@@ -811,8 +811,7 @@ a{
 }
 
 .series-section .grid-container{
-    height: calc(100vh - 400px);
-    max-height: 700px;
+    height: 700px;   
 }
 
 .series-section .grid-content{
