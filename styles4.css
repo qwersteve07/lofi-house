@@ -1757,19 +1757,6 @@ a{
     margin: 0 auto;
 }
 
-@media (max-width: 1200px){
-    .address-section{
-        height: 49vw;
-    }
-}
-
-@media (max-width: 991px){
-    .address-section{
-        height: 41vw;
-    }
-}
-
-
 @media (max-width: 767px){
     .address-section{
         height: 480px;
@@ -1825,17 +1812,6 @@ a{
     left: 15%;
 }
 
-@media (max-width: 1200px){
-    .future-section{
-        height: 49vw;
-    }
-}
-
-@media (max-width: 991px){  
-    .future-section{
-        height: 41vw;
-    }
-}
 
 @media (max-width: 767px){
     .future-section{
