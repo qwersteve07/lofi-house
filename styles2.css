@@ -578,7 +578,7 @@ a{
 }
 
 .now-section .block{
-    height: 500px;
+    height: calc(100vh - 130px);
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -689,6 +689,12 @@ a{
 
 .now-section .video video{
     width: 100%;
+}
+
+@media (min-width: 1600px){
+    .now-section .block{
+        height: 600px
+    }
 }
 
 
@@ -811,7 +817,7 @@ a{
 }
 
 .series-section .grid-container{
-    height: 700px;   
+    height: 55vw;
 }
 
 .series-section .grid-content{
@@ -1706,7 +1712,6 @@ a{
 
 .address-section{
     height: 53vw;
-    max-height: 650px;
     color: white;
     position: relative;
 }
@@ -1786,8 +1791,7 @@ a{
 
 
 .future-section{
-    height: 53vw;
-    max-height: 650px;
+    height: 56vw;
     color: #3c3c3c;
     position: relative;
 }
